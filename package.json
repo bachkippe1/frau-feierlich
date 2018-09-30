@@ -2,7 +2,11 @@
   "name": "frau-feierlich",
   "version": "1.0.0",
   "description": "website from frau feierlich",
-  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bachkippe1/frau-feierlich.git"
@@ -19,6 +23,19 @@
   "homepage": "https://github.com/bachkippe1/frau-feierlich#readme",
   "dependencies": {
     "bootstrap": "^4.1.3",
-    "webpack": "^4.20.2"
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "popper.js": "^1.14.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "exports-loader": "^0.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
   }
 }
