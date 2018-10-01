@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import 'jquery.easing';
 import 'popper.js';
-import 'bootstrap'
+import 'bootstrap';
 
 window.jQuery = $;
 window.$ = $;
