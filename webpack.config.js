@@ -18,6 +18,9 @@ module.exports = {
     // publicPath: '/dist'
   },
   watch: true,
+  resole: {
+    fallback: path.join(__dirname, "js/helpers")
+  },
   module: {
       rules: [  
           {
@@ -66,6 +69,10 @@ module.exports = {
           {
               test: /\.html$/,
               use: ['html-loader']
+          },
+          {
+              test: /\.hbs$/, 
+              loader: "handlebars-loader"
           }
       ]
   },  
