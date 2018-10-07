@@ -11,13 +11,13 @@
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/nunito-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/nunito-v9-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Nunito Regular'), local('Nunito-Regular'),
-       url('../fonts/nunito-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/nunito-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/nunito-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/nunito-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/nunito-v9-latin-regular.svg#Nunito') format('svg'); /* Legacy iOS */
+       url('../assets/fonts/nunito-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/nunito-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/nunito-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/nunito-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/nunito-v9-latin-regular.svg#Nunito') format('svg'); /* Legacy iOS */
 }
  
  #mainNav {
@@ -108,8 +108,8 @@
     height: auto;
     min-height: 35rem;
     padding: 15rem 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-masthead.jpg");
-    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../assets/img/bg-masthead.jpg");
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../assets/img/bg-masthead.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -225,8 +225,8 @@
   
   .signup-section {
     padding: 10rem 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-signup.jpg");
-    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../assets/img/bg-signup.jpg");
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../assets/img/bg-signup.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;

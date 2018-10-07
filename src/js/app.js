@@ -2,12 +2,10 @@ import $ from 'jquery';
 import 'jquery.easing';
 import 'popper.js';
 import 'bootstrap';
-import 'handlebars';
 
 window.jQuery = $;
 window.$ = $;
 
-var myMastHead = require("./handlebars/masthead.hbs");
 
 (function($) {
   "use strict"; // Start of use strict

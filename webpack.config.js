@@ -18,11 +18,9 @@ module.exports = {
     // publicPath: '/dist'
   },
   watch: true,
-  resole: {
-    fallback: path.join(__dirname, "js/helpers")
-  },
   module: {
-      rules: [  
+      rules: [
+        
           {
               test: /\.js$/,
               use: [
@@ -41,39 +39,32 @@ module.exports = {
                       'css-loader',
                       'sass-loader'
                   ]
-              })
-              
+              })              
           },
           {
-            test: /\.(png|jpg|gif|svg|eot|ttf)$/,
-            use: [{
-                loader: 'file-loader',
-                options: {
-                    name: '[name].[ext]',
-                    outputPath: 'img/',
-                    sourcePath: 'img/'
+            test: /\.(png|jpg|gif|svg)$/,
+            loader: 'file-loader',
+            options: {
+                name: '[name].[ext]',
+                outputPath: 'assets/images/'
+            }
+        },
+        {
+            test: /\.(woff|woff2|eot|ttf|svg)$/,
+            loader: 'file-loader',
+            options: {
+                name: '[name].[ext]',
+                outputPath: 'assets/fonts/'
+            }
+        },  {
+                test: /\.hbs$/,
+                loader: 'handlebars-loader',
+                query: { 
+                    helperDirs: [path.join(__dirname, 'src/js/helpers')], 
+                    inlineRequires: '/img/' 
                 }
-            }]
-          },
-          {
-            test: /\.(woff|woff2)$/,
-            use: [{
-                loader: 'file-loader',
-                options: {
-                    name: '[name].[ext]',
-                    outputPath: 'fonts/',
-                    sourcePath: 'fonts/'
-                }
-            }]
-          },
-          {
-              test: /\.html$/,
-              use: ['html-loader']
-          },
-          {
-              test: /\.hbs$/, 
-              loader: "handlebars-loader"
-          }
+            },        
+          
       ]
   },  
   plugins: [
@@ -87,7 +78,7 @@ module.exports = {
         filename: 'style.css'
     }),
     new HtmlWebpackPlugin({
-        template: 'src/index.html'
+        template: 'src/assets/html/index.hbs'
     })
   ],
 };
